@@ -2,12 +2,14 @@ blinker==1.8.2
 certifi==2024.8.30
 charset-normalizer==3.3.2
 click==8.1.7
+espn-api==0.38.1
 Flask==3.0.3
 Flask-Cors==5.0.0
 idna==3.8
 itsdangerous==2.2.0
 Jinja2==3.1.4
 jsonify==0.5
+make_response==1
 MarkupSafe==2.1.5
 requests==2.32.3
 urllib3==2.2.2

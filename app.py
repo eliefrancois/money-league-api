@@ -56,7 +56,7 @@ def get_user_league_details(league_id, year = 2024):
             "current_fantasy_week": league.current_week,
             "current_nfl_week": league.nfl_week,
             "name": league.settings.name,
-            "teams": [{'team_name': team.team_name, "wins": team.wins, "losses": team.losses, "ties": team.ties, "points_for": team.points_for, "points_against": team.points_against, "logo": team.logo_url} for team in league.teams],
+            "teams": [{'team_id': team.team_id,'team_abbrev': team.team_abbrev,'team_name': team.team_name, "wins": team.wins, "losses": team.losses, "ties": team.ties, "points_for": team.points_for, "points_against": team.points_against, "logo": team.logo_url} for team in league.teams],
             "standings": [{'team_name': team.team_name, "wins": team.wins, "losses": team.losses, "ties": team.ties, "points_for": team.points_for, "points_against": team.points_against, "logo": team.logo_url} for team in standings]
         }
         return jsonify(league_data), 200
